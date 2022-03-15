@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp11
+{
+    class a
+    {
+        string name;
+        int id;
+        int age;
+        public string names
+        {
+            set { name = value; }
+            get { return name; }
+        }
+        public int ide
+        {
+            set { id = value; }
+            get { return id; }
+        }
+        public int ageis 
+        {
+            set { age = value; }
+            get { return age; }
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            a obj = new a();
+            obj.names = "naman";
+            obj.ide = 102;
+            obj.ageis = 21;
+            Console.WriteLine("name is = "+obj.names);
+            Console.WriteLine("age is = "+obj.ageis);
+            Console.WriteLine("id is = "+obj.ide);
+            Console.ReadLine();
+        }
+    }
+}
